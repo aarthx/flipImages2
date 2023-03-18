@@ -1,0 +1,56 @@
+.setasBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.setasBox div:nth-child(1) {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.setasBox div:nth-child(2) {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.setasBox div:nth-child(2) svg{
+  transform: rotate(-90deg);
+}
+
+.setasBox div:nth-child(3) {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.setasBox div:nth-child(3) svg{
+  transform: rotate(180deg);
+}
+
+.setasBox div:nth-child(4) {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+
+.setasBox div:nth-child(4) svg{
+  transform: rotate(90deg);
+}
+
+.setasBox div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid var(--color-dark);
+  border-radius: 5px 0 5px 0;
+  background-color: var(--color-light);
+}
+
+.setasBox div:hover {
+  background-color: var(--color-red-light);
+  
+}

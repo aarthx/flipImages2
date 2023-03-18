@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@400;700&display=swap');
+
+:root {
+ --font-primary: 'K2D', sans-serif;
+ --color-dark: #3A324A;
+ --color-light: #F5E9CF;
+ --color-light-2: #DECDA7;
+ --color-red-light: #FF9494;
+ --color-red: #C7364D;
+}
+
+body {
+  background-color: var(--color-light);
+  font-family: var(--font-primary);
+  color: var(--color-dark);
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.container {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,44 @@
+.tabnav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--color-red-light);
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tabnav h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tabnav a {
+  font-size: 1.25rem;
+  text-decoration: underline;
+  justify-self: flex-end;
+  margin-right: 1rem;
+}
+
+@media (max-width: 970px) {
+  .espaco {
+    display: none;
+  }
+  .tabnav {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+  .tabnav a {
+    justify-self: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .tabnav h1 {
+    font-size: 1.5rem;
+  }
+  .tabnav a {
+    font-size: 1rem;
+  }
+}
